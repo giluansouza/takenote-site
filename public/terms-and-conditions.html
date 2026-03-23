@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Note | Termos de Uso</title>
+    <meta name="description" content="Termos de Uso oficiais do app Take Note, renderizados a partir do arquivo Markdown oficial.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body
+    class="site-body legal-page"
+    data-page="terms"
+    data-legal-doc-pt="terms-and-conditions.pt-BR.md"
+    data-legal-doc-en="terms-and-conditions.md"
+>
+    <header class="site-header">
+        <div class="shell nav-shell">
+            <a class="brand" href="index.html" aria-label="Take Note">
+                <img src="assets/icon-app.png" alt="Take Note app icon" data-i18n-alt="brand_icon_alt">
+                <span>Take Note</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="menu_button">
+                Menu
+            </button>
+
+            <nav id="site-menu" class="site-nav">
+                <a href="index.html#recursos" data-i18n="nav_features">Recursos</a>
+                <a href="index.html#capturas" data-i18n="nav_screenshots">Capturas</a>
+                <a data-legal-link="privacy" href="privacy-policy.html" data-i18n="nav_privacy_short">Privacidade</a>
+                <a data-legal-link="terms" href="terms-and-conditions.html" data-i18n="nav_terms_short">Termos</a>
+
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button class="lang-option" type="button" data-lang-option="pt">PT</button>
+                    <button class="lang-option" type="button" data-lang-option="en">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-template">
+        <div class="shell">
+            <span id="legal-label" class="section-kicker" data-i18n="legal_doc_label">Markdown oficial</span>
+
+            <div class="legal-layout">
+                <article id="legal-content" class="content-card">
+                    <p data-i18n="legal_loading">Carregando documento...</p>
+                </article>
+
+                <aside class="legal-summary">
+                    <h2 data-i18n="legal_toc_title">Nesta pagina</h2>
+                    <ul id="legal-toc">
+                        <li><a id="legal-source-link" href="terms-and-conditions.pt-BR.md" data-i18n="legal_open_md">Abrir Markdown oficial</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-meta">
+            <span id="current-year"></span>
+            <span><a id="legal-footer-link" href="terms-and-conditions.pt-BR.md" data-i18n="legal_footer_source">Fonte oficial em Markdown</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="legal-doc.js"></script>
+</body>
+</html>

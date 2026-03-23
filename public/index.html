@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Note | Notas offline em blocos</title>
+    <meta
+        name="description"
+        content="Take Note e um app de notas offline-first com editor em blocos, imagens, audio, checklist, categorias e links entre notas."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body" data-page="landing">
+    <header class="site-header">
+        <div class="shell nav-shell">
+            <a class="brand" href="#top" aria-label="Take Note">
+                <img src="assets/icon-app.png" alt="Take Note app icon" data-i18n-alt="brand_icon_alt">
+                <span>Take Note</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="menu_button">
+                Menu
+            </button>
+
+            <nav id="site-menu" class="site-nav">
+                <a href="#recursos" data-i18n="nav_features">Recursos</a>
+                <a href="#capturas" data-i18n="nav_screenshots">Capturas</a>
+                <a href="#planos" data-i18n="nav_plans">Planos</a>
+                <a href="#privacidade" data-i18n="nav_privacy_section">Privacidade</a>
+                <a data-legal-link="privacy" href="privacy-policy.html" data-i18n="nav_privacy_page">Politica de Privacidade</a>
+                <a data-legal-link="terms" href="terms-and-conditions.html" data-i18n="nav_terms_page">Termos de Uso</a>
+
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button class="lang-option" type="button" data-lang-option="pt">PT</button>
+                    <button class="lang-option" type="button" data-lang-option="en">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="shell hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow" data-i18n="hero_eyebrow">Offline-first notes</div>
+                    <h1 data-i18n="hero_title">Notas em blocos, no seu ritmo, direto no dispositivo.</h1>
+                    <p class="hero-text" data-i18n="hero_text">
+                        O Take Note foi feito para anotar rapido e organizar melhor.
+                        Combine texto, titulos, checklist, imagens, audio e links entre notas
+                        em uma experiencia simples, local e focada.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.devboot.takenote" target="_blank" rel="noopener" data-i18n="hero_download">
+                            Baixar gratis
+                        </a>
+                        <a class="button button-secondary" href="#capturas" data-i18n="hero_view">
+                            Ver o app
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-chip">
+                            <strong data-i18n="hero_chip_local_title">100% local</strong>
+                            <span data-i18n="hero_chip_local_text">Notas ficam no dispositivo.</span>
+                        </div>
+                        <div class="highlight-chip">
+                            <strong data-i18n="hero_chip_blocks_title">Blocos flexiveis</strong>
+                            <span data-i18n="hero_chip_blocks_text">Texto, listas, imagens e audio.</span>
+                        </div>
+                        <div class="highlight-chip">
+                            <strong data-i18n="hero_chip_store_title">Pronto para Play Store</strong>
+                            <span data-i18n="hero_chip_store_text">Com paginas de privacidade e termos.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-card visual-card-back">
+                        <img src="assets/recurso-grafico.png" alt="Take Note hero artwork" data-i18n-alt="hero_art_alt">
+                    </div>
+                    <div class="visual-card visual-shot visual-shot-left">
+                        <img src="assets/2-Criação de nota com menu aberto.jpg" alt="Creating a note with block menu open" data-i18n-alt="hero_left_alt">
+                    </div>
+                    <div class="visual-card visual-shot visual-shot-right">
+                        <img src="assets/6-Nota com anotações.jpg" alt="Note with text and audio" data-i18n-alt="hero_right_alt">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="section section-cream">
+            <div class="shell">
+                <div class="section-heading">
+                    <span class="section-kicker" data-i18n="features_kicker">O que da para fazer</span>
+                    <h2 data-i18n="features_title">Um editor simples por fora, completo por dentro.</h2>
+                    <p data-i18n="features_text">
+                        O app foi pensado para notas do dia a dia, listas rapidas, referencias visuais
+                        e registros com texto e audio no mesmo lugar.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_editor_title">Editor em blocos</h3>
+                        <p data-i18n="feature_editor_text">Use texto, titulos, subtitulos, citacoes, listas, listas numeradas e checklist sem friccao.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_media_title">Imagens e audio</h3>
+                        <p data-i18n="feature_media_text">Adicione imagens a nota e grave audio no app com reproducao em 1x, 1.5x e 2x.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_categories_title">Organizacao por categorias</h3>
+                        <p data-i18n="feature_categories_text">Use cores, filtros e visualizacao em lista ou grade para encontrar o que interessa mais rapido.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 data-i18n="feature_offline_title">Offline-first</h3>
+                        <p data-i18n="feature_offline_text">As notas ficam salvas localmente no aparelho, com foco em uso rapido e privado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark">
+            <div class="shell details-grid">
+                <div>
+                    <span class="section-kicker" data-i18n="workflow_kicker">Fluxo do editor</span>
+                    <h2 data-i18n="workflow_title">Comece com uma nota vazia e monte o conteudo do seu jeito.</h2>
+                    <p class="muted" data-i18n="workflow_text">
+                        O menu de blocos aparece direto no editor e reduz o atrito para montar notas
+                        com estrutura. O foco aqui nao e parecer complexo. E deixar rapido.
+                    </p>
+
+                    <ul class="bullet-list">
+                        <li data-i18n="workflow_item_1">Menu de blocos com acesso por "Aa" e botao fixo no editor</li>
+                        <li data-i18n="workflow_item_2">Relacionamento entre notas para criar contexto</li>
+                        <li data-i18n="workflow_item_3">Busca de notas e filtro por categoria</li>
+                        <li data-i18n="workflow_item_4">Arquivar, desarquivar e reordenar notas e categorias</li>
+                    </ul>
+                </div>
+
+                <div class="stacked-phones">
+                    <figure class="phone-frame">
+                        <img src="assets/3-nota com checklist.jpg" alt="Note with checklist" data-i18n-alt="workflow_phone_1_alt">
+                    </figure>
+                    <figure class="phone-frame offset-phone">
+                        <img src="assets/5-Nota com imagem.jpg" alt="Note with image blocks" data-i18n-alt="workflow_phone_2_alt">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="capturas" class="section section-cream">
+            <div class="shell">
+                <div class="section-heading">
+                    <span class="section-kicker" data-i18n="screens_kicker">Capturas de tela</span>
+                    <h2 data-i18n="screens_title">O produto aparece melhor quando a interface fala por si.</h2>
+                    <p data-i18n="screens_text">
+                        As capturas abaixo seguem o material ja preparado para a loja e mostram
+                        os fluxos principais do app.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-card">
+                        <img src="assets/1-Home-lista de notas.jpg" alt="Home screen with notes list" data-i18n-alt="screen_1_alt">
+                        <figcaption data-i18n="screen_1_caption">Tudo em um so lugar</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/2-Criação de nota com menu aberto.jpg" alt="New note with menu open" data-i18n-alt="screen_2_alt">
+                        <figcaption data-i18n="screen_2_caption">Comece uma nota do zero</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/3-nota com checklist.jpg" alt="Note with checklist" data-i18n-alt="screen_3_alt">
+                        <figcaption data-i18n="screen_3_caption">Checklist para tarefas rapidas</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/4-lista numerada e normal.jpg" alt="Note with numbered and bullet lists" data-i18n-alt="screen_4_alt">
+                        <figcaption data-i18n="screen_4_caption">Listas do seu jeito</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/5-Nota com imagem.jpg" alt="Note with image" data-i18n-alt="screen_5_alt">
+                        <figcaption data-i18n="screen_5_caption">Adicione imagens a nota</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/6-Nota com anotações.jpg" alt="Note with text and audio" data-i18n-alt="screen_6_alt">
+                        <figcaption data-i18n="screen_6_caption">Texto e audio juntos</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/7-listagem com categoria selecionada.jpg" alt="Notes filtered by category" data-i18n-alt="screen_7_alt">
+                        <figcaption data-i18n="screen_7_caption">Filtre por categoria</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="assets/8-Notas arquivadas.jpg" alt="Archived notes screen" data-i18n-alt="screen_8_alt">
+                        <figcaption data-i18n="screen_8_caption">Arquive sem perder nada</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="section section-dark">
+            <div class="shell">
+                <div class="section-heading">
+                    <span class="section-kicker" data-i18n="plans_kicker">Planos</span>
+                    <h2 data-i18n="plans_title">Comece gratis. Evolua quando quiser.</h2>
+                    <p data-i18n="plans_text">
+                        Sem assinatura forcada. Pague uma vez pelo que precisa
+                        ou assine para ter tudo, incluindo backup na nuvem.
+                    </p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-tier">Free</div>
+                        <p class="pricing-desc">Para experimentar sem compromisso.</p>
+                        <ul class="pricing-features">
+                            <li>Ate 50 notas</li>
+                            <li>Editor em blocos (texto, titulos, listas, checklist)</li>
+                            <li>Imagens na nota</li>
+                            <li>Audio gravado no app</li>
+                            <li>Salvamento rapido de links</li>
+                            <li>Armazenamento local</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card pricing-card-highlight">
+                        <div class="pricing-tier">Premium</div>
+                        <div class="pricing-type">Pagamento unico</div>
+                        <p class="pricing-desc">Pague uma vez, use para sempre.</p>
+                        <div class="pricing-inherit">Tudo do Free, mais:</div>
+                        <ul class="pricing-features">
+                            <li>Notas ilimitadas</li>
+                            <li>Personalizar textos</li>
+                            <li>Personalizar cores</li>
+                            <li>Transcricao de voz</li>
+                            <li>Importar e exportar notas</li>
+                            <li>Fazer backup</li>
+                            <li>Extrair textos de imagens</li>
+                            <li>Compartilhar notas</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-tier">Pro</div>
+                        <div class="pricing-type">Assinatura mensal</div>
+                        <p class="pricing-desc">Para quem quer o maximo do app.</p>
+                        <div class="pricing-inherit">Tudo do Premium, mais:</div>
+                        <ul class="pricing-features">
+                            <li>Armazenamento em nuvem</li>
+                            <li>Sem anuncios</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pricing-cta">
+                    <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.devboot.takenote" target="_blank" rel="noopener" data-i18n="plans_cta">
+                        Disponivel no Google Play
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div>
+                <a class="brand brand-footer" href="#top" aria-label="Take Note">
+                    <img src="assets/icon-app.png" alt="Take Note app icon" data-i18n-alt="brand_icon_alt">
+                    <span>Take Note</span>
+                </a>
+                <p class="footer-copy" data-i18n="footer_copy">
+                    App de notas offline-first com blocos, imagens, audio, categorias e links entre notas.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#capturas" data-i18n="nav_screenshots">Capturas</a>
+                <a href="#planos" data-i18n="nav_plans">Planos</a>
+                <a data-legal-link="privacy" href="privacy-policy.html" data-i18n="nav_privacy_page">Politica de Privacidade</a>
+                <a data-legal-link="terms" href="terms-and-conditions.html" data-i18n="nav_terms_page">Termos de Uso</a>
+                <a href="mailto:tecnlogiadevboot@gmail.com" data-i18n="footer_contact">Contato</a>
+            </div>
+        </div>
+
+        <div class="shell footer-meta">
+            <span id="current-year"></span>
+            <span data-i18n="footer_rights">Take Note. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

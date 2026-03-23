@@ -1,0 +1,25 @@
+services:
+  web:
+    image: nginx:stable-alpine
+    container_name: takenote-site
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=debnet
+      # HTTP
+      - traefik.http.routers.takenote.rule=Host(`takenote.devboot.com.br`)
+      - traefik.http.routers.takenote.entrypoints=web
+      # HTTPS
+      - traefik.http.routers.takenote-secure.rule=Host(`takenote.devboot.com.br`)
+      - traefik.http.routers.takenote-secure.entrypoints=websecure
+      - traefik.http.routers.takenote-secure.tls=true
+      - traefik.http.routers.takenote-secure.tls.certresolver=le
+      # Service
+      - traefik.http.services.takenote.loadbalancer.server.port=80
+    networks:
+      - debnet
+
+networks:
+  debnet:
+    external: true
